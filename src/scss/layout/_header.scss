@@ -1,5 +1,5 @@
 .site-header {
-    padding: 24px 0;
+  padding: 24px 0;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -33,4 +33,21 @@
         line-height: 16px;
         padding: 8px 24px;
     }
+}
+
+header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  h1 {
+    display: inline;
+    vertical-align: middle;
+    margin-left: 8px;
+    font-size: $primary-h1-font-size;
+  }
+
+  img {
+    display: inline;
+    vertical-align: middle;
+  }
 }

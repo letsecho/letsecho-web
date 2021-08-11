@@ -17,10 +17,6 @@
     @include shadow;
 }
 
-main {
-    flex: 1 0 auto;
-}
-
 .section-inner {
     position: relative; /* To always display inner elements above pseudo decorative stuff */
     padding-top: 48px;
@@ -33,4 +29,37 @@ main {
         padding-top: 88px;
         padding-bottom: 88px;
     }
+}
+
+main {
+
+  flex: 1 0 auto;
+
+  article {
+    width: 62%;
+    margin: 124px 0;
+    padding-right: 12%;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+
+    h1 {
+      text-align: left;
+      font-size: $article-h1-font-size;
+      line-height: 1;
+      margin: 0;
+    }
+
+    p {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      letter-spacing: 1.01px;
+    }
+  }
+
+  section {
+    display: inline-block;
+    text-align: center;
+    width: 37%;
+  }
 }

@@ -14,11 +14,20 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+h1 {
+  color: $primary-color;
+  margin: 0px;
+}
+
 hr {
 	border: 0;
 	@include divider();
 	margin-top: 24px;
 	margin-bottom: 24px;
+}
+
+p {
+  color: $secondary-color;
 }
 
 ul, ol {
