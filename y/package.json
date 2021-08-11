@@ -1,16 +1,9 @@
 {
-  "name": "venus",
+  "name": "letescho",
   "version": "1.0.0",
-  "description": "Venus Template",
-  "author": "Pasquale Vitiello <pasqualevitiello@gmail.com>",
+  "description": "Letescho website",
+  "author": "Letsecho",
   "license": "GPLv3",
-  "repository": {
-    "type": "git",
-    "url": "https://bitbucket.org/pasqualevitiello/venus.git"
-  },
-  "bugs": {
-    "url": "https://bitbucket.org/pasqualevitiello/venus/issues"
-  },
   "scripts": {
     "clean": "rimraf dist/{css/*,js/*,images/*}",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
@@ -34,14 +27,9 @@
     "autoprefixer": "^9.0.1",
     "browser-sync": "^2.12.8",
     "eslint": "^5.2.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0",
     "imagemin-cli": "^3.0.0",
     "mkdirp": "^0.5.1",
-    "node-sass": "^4.9.2",
+    "node-sass": "^6.0.1",
     "npm-run-all": "^4.1.3",
     "onchange": "^4.1.0",
     "postcss-cli": "^6.0.0",
@@ -49,6 +37,6 @@
     "stylelint": "^9.4.0",
     "uglify-es": "^3.3.10"
   },
-  "homepage": "https://bitbucket.org/pasqualevitiello/venus#readme",
+  "homepage": "https://letsechoapp.com",
   "main": ".eslintrc.js"
 }
