@@ -1,0 +1,18 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "VA74J2298Y.com.letsecho.letsechoapp" ],
+             "components": [
+               {
+                  "/": "/events/*",
+                  "comment": "Matches any URL whose path starts with /events/"
+               }
+             ]
+           }
+       ]
+   },
+   "webcredentials": {
+      "apps": [ "VA74J2298Y.com.letsecho.letsechoapp" ]
+   }
+}
