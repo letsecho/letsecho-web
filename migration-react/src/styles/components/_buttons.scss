@@ -169,3 +169,70 @@
 		max-width: 280px;
 	}
 }
+
+.eventName {
+  top: 342px;
+  left: 168px;
+  width: 50%;
+  text-align: left;
+  font: normal normal bold 5vw Helvetica;
+  letter-spacing: -1.42px;
+  color: #171719;
+  opacity: 1;
+}
+
+.hostName {
+  top: 289px;
+  left: 168px;
+  width: 230px;
+  text-align: left;
+  font: normal normal medium 21px/26px Helvetica Neue;
+  letter-spacing: 0.17px;
+  color: #333131;
+  opacity: 1;
+}
+
+.contextName {
+  top: 511px;
+  left: 168px;
+  width: 52%;
+  text-align: left;
+  font: normal normal normal 21px/35px Helvetica Neue;
+  letter-spacing: 1.01px;
+  color: #464545;
+  opacity: 1;
+}
+
+.imageDisplay {
+  top: 164px;
+  left: 1152px;
+  width: 45%;
+  /* UI Properties */
+  background: #E0E0E0 0% 0% no-repeat padding-box;
+  opacity: 1;
+  float: right;
+}
+
+.sectionDisplay {
+  padding-top: 6%;
+  padding-bottom: 12%;
+}
+
+.joinName {
+  top: 616px;
+  left: 168px;
+  text-align: left;
+  font: normal normal bold 21px/26px Helvetica Neue;
+  letter-spacing: 1.03px;
+  color: #242424;
+  opacity: 1;
+}
+
+.finalBottons {
+  top: 688px;
+  left: 172px;
+  width: 176px;
+  height: 57px;
+  margin-right: 3%;
+  display: inline !important;
+}
