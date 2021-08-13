@@ -1,16 +1,15 @@
 import React from 'react';
 import { useFetchEvent } from '../hooks/useFetchEvent';
+import { EventTemplate } from './EventTemplate';
 
 export const EventDesing = () => {
 
     const { data: baseinfo, loading } = useFetchEvent("Jodc23gOew");
     console.log(baseinfo);
+    console.log(loading);
     return (
-        <section>
-          <h2>{baseinfo.name}</h2>
-          <p>{baseinfo.createdBy.name}</p>
-          <p>{baseinfo.description}</p>
-          <img src={baseinfo.banner.url} alt={baseinfo.banner.name} width="500" height="600"/>
-        </section>
+      <>
+        {!loading && <EventTemplate eventName={baseinfo.name} hostName={baseinfo.createdBy.name} eventDescription={baseinfo.description} imageUrl={baseinfo.banner.url} imageName={baseinfo.banner.name} />}
+      </>
     )
 }
