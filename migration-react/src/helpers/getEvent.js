@@ -4,7 +4,6 @@ export const getEvent = async(eventID) => {
       method: 'GET',
       mode: 'cors',
       cache: 'no-cache',
-
     });
     const eventResponse = await resp.json();
     return eventResponse;

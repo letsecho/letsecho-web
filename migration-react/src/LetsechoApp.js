@@ -1,11 +1,8 @@
-import React from 'react';
-import { EventDesing } from './components/EventDesing';
+import React from 'react'
+import { AppRouter } from './routers/AppRouter';
 
 export const LetsechoApp = () => {
-
-    return (
-        <>
-            <EventDesing/>
-        </>
-    )
+  return (
+    <AppRouter />
+  )
 }
