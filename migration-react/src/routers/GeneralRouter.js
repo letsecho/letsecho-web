@@ -14,11 +14,11 @@ export const GeneralRouter = () => {
     <div className="container">
       <Header/>
       <Switch>
-        <Route exact path="/event/:eventId" component={ EventDesing } />
+        <Route exact path="/events/:eventId" component={ EventDesing } />
         <Route exact path="/faq" component={ Faq } />
         <Route exact path="/privacy" component={ Privacy } />
         <Route exact path="/terms" component={ Terms } />
-        <Redirect to="/event" />
+        <Redirect to="/events" />
       </Switch>
       <Footer/>
     </div>

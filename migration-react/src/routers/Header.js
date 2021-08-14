@@ -5,7 +5,7 @@ import Image from "../images/logo.svg";
 export const Header = () => {
   return (
     <header>
-      <Link className="navbar-brand" to="/event">
+      <Link className="navbar-brand" to="/events">
         <img src={Image} alt="Letescho logo" width="40px"/>
         <h1>Letsecho</h1>
       </Link>

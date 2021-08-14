@@ -3,7 +3,7 @@ export const getEvent = async(eventID) => {
     const resp = await fetch(url, {
       method: 'GET',
       mode: 'cors',
-      cache: 'no-cache',
+      cache: 'no-cache'
     });
     const eventResponse = await resp.json();
     return eventResponse;

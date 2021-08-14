@@ -1,5 +1,5 @@
-import React, { useMemo } from 'react';
-import { useParams, Redirect } from 'react-router-dom';
+import React from 'react';
+import { useParams } from 'react-router-dom';
 
 import { useFetchEvent } from '../hooks/useFetchEvent';
 import { EventTemplate } from './EventTemplate';
