@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: echo "Hola ${{ github.run_id }} ${{ production.DEVELOPER }}  env ${{ github.DEVELOPER }}  Sec ${{ secrets.DEVELOPER }}"
+      - run: echo "Hola ${{ github.run_id }} env ${{ github.DEVELOPER }}  Sec ${{ secrets.DEVELOPER }}"
       - run: npm install
       - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
