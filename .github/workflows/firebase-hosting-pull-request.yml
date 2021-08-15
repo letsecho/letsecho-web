@@ -10,6 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm install && npm run build
+        env:
+            REACT_APP_REST_API_KEY: ${{ secrets.REST_API_KEY }}
+            REACT_APP_API_KEY: ${{ secrets.API_KEY }}
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
