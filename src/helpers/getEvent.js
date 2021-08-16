@@ -1,7 +1,7 @@
 const { REACT_APP_REST_API_KEY, REACT_APP_API_KEY } = process.env;
 
 export const getEvent = async(eventID) => {
-  const url = `https://parseapi.back4app.com/classes/Event/${eventID}`;
+  const url = `https://api.letsechoapp.com/classes/Event/${eventID}`;
   const resp = await fetch(url, {
     method: 'GET',
     mode: 'cors',
