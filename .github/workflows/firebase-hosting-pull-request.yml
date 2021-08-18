@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: touch src/public/developer.txt
-      - run: echo "Hola ${{ github.run_id }}  Sec ${{ secrets.DEVELOPER }}" >> src/public/developer.txt
+      - run: touch public/developer.txt
+      - run: echo "Hola ${{ github.run_id }}  Sec ${{ secrets.DEVELOPER }}" >> public/developer.txt
       - run: npm install
       - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
