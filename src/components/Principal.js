@@ -2,9 +2,11 @@ import React from 'react';
 import Logo from "../images/logo.svg";
 import IPhone from "../images/iphone-hero-bg.svg";
 import IPhoneFeature from "../images/iphone-feature-bg-01.svg";
+import IPhoneFeature2 from "../images/iphone-feature-bg-02.svg";
 import IPhoneSuggestions from "../images/iphone-suggestions.png";
 import IPhoneDiscover from "../images/iphone-discover.png";
 import IPhoneEvent from "../images/iphone-event.png";
+import IPhoneComments from "../images/iphone-comments.png";
 import { Link } from 'react-router-dom';
 
 export const Principal = () => {
@@ -37,7 +39,8 @@ export const Principal = () => {
                 <h1 className="hero-title mt-0">Letsecho</h1>
                 <p className="hero-paragraph">Discover spontaneous activities, meet people, and make meaningful connections.</p>
                 <div className="hero-cta">
-                  <a className="button button-primary button-wide-mobile" href="https://play.google.com/store/apps/details?id=com.letsecho.letsechoapp">Pre-register</a>
+                  <a className="button button-primary button-wide-mobile" href="https://apps.apple.com/app/letsecho/id1563740904">Download iOS</a>
+                  <a className="button button-primary button-wide-mobile" href="https://play.google.com/store/apps/details?id=com.letsecho.letsechoapp">Download Android</a>
                 </div>
               </div>
               <div className="mockup-container">
@@ -59,18 +62,18 @@ export const Principal = () => {
                     <div className="mockup-bg">
                       <img src={IPhoneFeature} alt="iPhone Feature 01 illustration"/>
                     </div>
-                    <img className="device-mockup is-revealing" src={IPhoneDiscover} alt="iPhone Feature 01"/>
+                    <img className="device-mockup is-revealing" src={IPhoneDiscover} alt="iPhone Discover"/>
                   </div>
                   <div className="feature-extended-body is-revealing">
                     <h3 className="mt-0 mb-16">Discover</h3>
                     <h4 className="mt-0 mb-16">gatherings happening nearby</h4>
-                    <p className="m-0">Check and request to join gatherings nearby. Feeling like the party lead? Create your echo!</p>
+                    <p className="m-0">Check and request to join gatherings nearby. Are you feeling like the party leader? Create your echo!</p>
                   </div>
                 </div>
                 <div className="feature-extended">
                   <div className="feature-extended-image">
                     <div className="mockup-bg">
-                      <img src={IPhoneFeature} alt="iPhone Feature 02 illustration"/>
+                      <img src={IPhoneFeature2} alt="iPhone Feature 02 illustration"/>
                     </div>
                     <img className="device-mockup is-revealing" src={IPhoneSuggestions} alt="iPhone Suggestions"/>
                   </div>
@@ -80,6 +83,19 @@ export const Principal = () => {
                     <p className="m-0">Not sure what to plan? Get some inspiration for your echos with suggestions.</p>
                   </div>
                 </div>
+                <div className="feature-extended">
+  								<div className="feature-extended-image">
+  									<div className="mockup-bg">
+  										<img src={IPhoneFeature} alt="iPhone Feature 01 illustration">
+  									</div>
+  									<img className="device-mockup is-revealing" src={IPhoneComments} alt="iPhone Comments">
+  								</div>
+  								<div className="feature-extended-body is-revealing">
+  									<h3 className="mt-0 mb-16">Comments</h3>
+                    <h4 className="mt-0 mb-16">Follow the conversation</h4>
+  									<p className="m-0">Comment on gatherings to suggest a time to meet, a location, or just say hi.</p>
+  								</div>
+  							</div>
               </div>
             </div>
           </div>
