@@ -86,9 +86,9 @@ export const Principal = () => {
                 <div className="feature-extended">
   								<div className="feature-extended-image">
   									<div className="mockup-bg">
-  										<img src={IPhoneFeature} alt="iPhone Feature 01 illustration">
+  										<img src={IPhoneFeature} alt="iPhone Feature 01 illustration"/>
   									</div>
-  									<img className="device-mockup is-revealing" src={IPhoneComments} alt="iPhone Comments">
+  									<img className="device-mockup is-revealing" src={IPhoneComments} alt="iPhone Comments"/>
   								</div>
   								<div className="feature-extended-body is-revealing">
   									<h3 className="mt-0 mb-16">Comments</h3>
