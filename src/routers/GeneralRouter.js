@@ -13,13 +13,13 @@ export const GeneralRouter = () => {
   return (
     <div className="container">
       <Header/>
-      <Switch>
-        <Route exact path="/events/:eventId" component={ EventDesing } />
-        <Route exact path="/faq" component={ Faq } />
-        <Route exact path="/privacy" component={ Privacy } />
-        <Route exact path="/terms" component={ Terms } />
-        <Redirect to="/index" />
-      </Switch>
+        <Switch>
+          <Route exact path="/events/:eventId" component={ EventDesing } />
+          <Route exact path="/faq" component={ Faq } />
+          <Route exact path="/privacy" component={ Privacy } />
+          <Route exact path="/terms" component={ Terms } />
+          <Redirect to="/index" />
+        </Switch>
       <Footer/>
     </div>
   )
