@@ -6,7 +6,9 @@ export const EventTemplate = ({eventName = "", hostName = "", eventDescription =
 
   return (
     <section className="sectionDisplay">
-      <img className="imageDisplay" src={imageUrl} alt={imageName} />
+      <div className="imageDisplay">
+        <img src={imageUrl} alt={imageName} />
+      </div>
       <p className="hostName">Hosted by: {hostName}</p>
       <p className="eventName">{eventName}</p>
       <p className="contextName">{eventDescription}</p>
@@ -16,3 +18,29 @@ export const EventTemplate = ({eventName = "", hostName = "", eventDescription =
     </section>
   )
 }
+
+/*
+<Container>
+  <Row>
+    <Col xs="12" sm="12" md="6">
+      <p className="hostName">Hosted by: {hostName}</p>
+      <p className="eventName">{eventName}</p>
+    </Col>
+    <Col xs="12" sm="12" md="6">
+      <img className="imageDisplay" src={imageUrl} alt={imageName} />
+    </Col>
+    <Col xs="12" sm="12" md="6" className="beforeRender">
+      <p className="contextName">{eventDescription}</p>
+      <p className="joinName"><b>Download to join →</b></p>
+      <Row>
+        <Col xs="6" sm="6" md="4">
+          <img src={AppStore} alt="AppStore" className="finalBottons" />
+        </Col>
+        <Col xs="6" sm="6" md="4">
+          <img src={PlayStore} alt="PlayStore" className="finalBottons" />
+        </Col>
+      </Row>
+    </Col>
+  </Row>
+</Container>
+*/
