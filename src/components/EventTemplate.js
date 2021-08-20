@@ -5,18 +5,15 @@ import AppStore from "../images/appstore.png";
 export const EventTemplate = ({eventName = "", hostName = "", eventDescription = "", imageUrl = "", imageName = ""}) => {
 
   return (
-    <>
+    <section className="sectionDisplay">
       <section className="float">
         <img src={imageUrl} alt={imageName} />
       </section>
-      <article>
+      <article className="nonMarginArticle">
         <p className="hostName">Hosted by: {hostName}</p>
         <h2 className="eventName">{eventName}</h2>
         <p>
-          Letsecho built the Letsecho app as
-          an Ad Supported app. This SERVICE is provided by
-          Letsecho at no cost and is intended for use as
-          is.
+          {eventDescription}
         </p>
         <p className="joinName">
           <b>Download to join →</b>
@@ -25,7 +22,7 @@ export const EventTemplate = ({eventName = "", hostName = "", eventDescription =
         <img src={PlayStore} alt="PlayStore" className="finalBottons" />
       </article>
       <div className="clearfixed"></div>
-    </>
+    </section>
   )
 }
 

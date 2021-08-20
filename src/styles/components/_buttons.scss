@@ -193,8 +193,7 @@
 }
 
 .sectionDisplay {
-  padding-top: 6%;
-  padding-bottom: 12%;
+  padding-bottom: 6%;
 }
 
 .joinName {
@@ -214,6 +213,10 @@
 
 .clearfixed {
   clear: both;
+}
+
+.nonMarginArticle {
+  margin: 0px;
 }
 
 @media only screen and (min-width: 600px) {
