@@ -50,6 +50,13 @@ main {
       margin: 0;
     }
 
+    h2 {
+      text-align: left;
+      font-size: $article-h2-font-size;
+      line-height: 1;
+      margin: 0;
+    }
+
     p {
       margin-top: 32px;
       margin-bottom: 32px;
@@ -67,7 +74,7 @@ main {
   section.float img {
     width: 100%;
   }
-  
+
   @include media( '<medium' ) {
     article {
       width: 100%;
