@@ -5,7 +5,7 @@ export const Terms = () => {
   return (
     <main>
       <article>
-        <h1>Terms &amp; Conditions</h1>
+        <h1 className="specialHeadline">Terms &amp; Conditions</h1>
         <p>
           By downloading or using the app, these terms will
           automatically apply to you – you should make sure therefore

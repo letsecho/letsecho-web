@@ -5,7 +5,7 @@ export const Faq = () => {
   return (
     <main>
       <article>
-        <h1>FAQ</h1>
+        <h1 className="specialHeadline">FAQ</h1>
 
         <h2>What's Letsecho app?</h2>
 

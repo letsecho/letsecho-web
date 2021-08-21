@@ -50,9 +50,16 @@ main {
       margin: 0;
     }
 
-    h2 {
+    h1.specialHeadline {
       text-align: left;
-      font-size: $article-h2-font-size;
+      font-size: $article-h1-special;
+      line-height: 1;
+      margin: 0;
+    }
+
+    h2.eventName {
+      text-align: left;
+      font-size: $article-h2-special;
       line-height: 1;
       margin: 0;
     }

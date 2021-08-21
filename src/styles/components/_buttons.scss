@@ -228,6 +228,9 @@
 
 @media only screen and (max-width: 600px) {
   .eventName{
-    font-size: 15vw;
+    font-size: 15vw !important;
+  }
+  .specialHeadline{
+    font-size: 13vw !important;
   }
 }
