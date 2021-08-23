@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Image from "../images/logo.svg";
 
 export const Footer = () => {
@@ -8,12 +7,12 @@ export const Footer = () => {
       <div className="site-footer-bottom">
         <div className="container">
           <div className="site-footer-inner">
-            <div class="brand footer-brand">
+            <div className="brand footer-brand">
               <a href="main.html">
-                <img src="dist/images/logo.svg" alt="Letescho logo" width="40px" />
+                <img src={Image} alt="Letescho logo" width="40px"/>
               </a>
             </div>
-            <ul class="footer-links list-reset">
+            <ul className="footer-links list-reset">
               <li>
                 <a href="mailto:info@letsechoapp.com">Contact</a>
               </li>
