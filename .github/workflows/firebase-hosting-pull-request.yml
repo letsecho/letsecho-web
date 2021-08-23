@@ -10,9 +10,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: echo "REACT_APP_API_KEY=${{ secrets.API_KEY }}\nREACT_APP_REST_KEY=${{ secrets.REST_API_KEY }}" > .env && ls -a
+      - run: echo "Hola ${{ github.run_id }}" > public/developer.txt
       - run: npm install
+      - run: npm run scss
       - run: npm run build
-      - run: cd public && echo "Hola ${{ github.run_id }}" > developer.txt && ls
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
