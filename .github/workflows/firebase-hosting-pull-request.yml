@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: echo "REACT_APP_API_KEY=${{ secrets.API_KEY }}\nREACT_APP_REST_KEY=${{ secrets.REST_API_KEY }}" > .env && ls
+      - run: echo "REACT_APP_API_KEY=${{ secrets.API_KEY }}\nREACT_APP_REST_KEY=${{ secrets.REST_API_KEY }}" > .env && ls -a
       - run: npm install
       - run: npm run build
       - run: cd public && echo "Hola ${{ github.run_id }}" > developer.txt && ls
