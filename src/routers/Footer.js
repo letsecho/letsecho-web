@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="container">
           <div className="site-footer-inner">
             <div className="brand footer-brand">
-              <a href="main.html">
+              <a href="/main.html">
                 <img src={Image} alt="Letescho logo" width="40px"/>
               </a>
             </div>
