@@ -5,10 +5,10 @@ import Image from "../images/logo.svg";
 export const Header = () => {
   return (
     <header>
-      <Link className="navbar-brand" to="/index">
-        <img src={Image} alt="Letescho logo" width="40px"/>
+      <a href="main.html">
+        <img src="dist/images/logo.svg" width="40" />
         <h1>Letsecho</h1>
-      </Link>
+      </a>
     </header>
   )
 }

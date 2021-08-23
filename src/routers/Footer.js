@@ -8,29 +8,23 @@ export const Footer = () => {
       <div className="site-footer-bottom">
         <div className="container">
           <div className="site-footer-inner">
-            <div className="brand footer-brand">
-              <Link className="navbar-brand" to="/index">
-                <img src={Image} alt="Letescho logo" width="40px"/>
-              </Link>
+            <div class="brand footer-brand">
+              <a href="main.html">
+                <img src="dist/images/logo.svg" alt="Letescho logo" width="40px" />
+              </a>
             </div>
-            <ul className="footer-links list-reset">
+            <ul class="footer-links list-reset">
               <li>
                 <a href="mailto:info@letsechoapp.com">Contact</a>
               </li>
               <li>
-                <Link className="navbar-brand" to="/faq">
-                  FAQ's
-                </Link>
+                <a href="faq.html">FAQ's</a>
               </li>
               <li>
-                <Link className="navbar-brand" to="/privacy">
-                  Privacy
-                </Link>
+                <a href="privacy.html">Privacy</a>
               </li>
               <li>
-                <Link className="navbar-brand" to="/terms">
-                  Terms
-                </Link>
+                <a href="terms.html">Terms</a>
               </li>
             </ul>
             <ul className="footer-social-links list-reset">
