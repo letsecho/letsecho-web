@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: echo $"REACT_APP_API_KEY=${{ secrets.APP_ID }}\\nREACT_APP_REST_KEY=${{ secrets.REST_API_KEY }}" > .env && ls -a
-      - run: echo $"Hola ${{ github.run_id }}\\nREACT_APP_API_KEY=${{ secrets.APP_ID }}\\nREACT_APP_REST_KEY=${{ secrets.REST_API_KEY }}" > public/developer.txt
+      - run: printf $"REACT_APP_API_KEY=${{ secrets.APP_ID }}\\nREACT_APP_REST_KEY=${{ secrets.REST_API_KEY }}" > .env && ls -a
+      - run: printf $"Hola ${{ github.run_id }}\\nREACT_APP_API_KEY=${{ secrets.APP_ID }}\\nREACT_APP_REST_KEY=${{ secrets.REST_API_KEY }}" > public/developer.txt
       - run: npm install
       - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
