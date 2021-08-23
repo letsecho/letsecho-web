@@ -13,9 +13,7 @@ jobs:
       - run: echo "REACT_APP_API_KEY=${{ secrets.API_KEY }}\nREACT_APP_REST_KEY=${{ secrets.REST_API_KEY }}" >> .env
       - run: npm install
       - run: npm run build
-      - run: touch public/developer.txt
-      - run: echo "Hola ${{ github.run_id }}" >> public/developer.txt
-      - run: cd public && ls
+      - run: touch public/developer.txt && echo "Hola ${{ github.run_id }}" >> public/developer.txt && cd public && ls
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
