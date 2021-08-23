@@ -15,9 +15,9 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "scss": "node-sass -o public/static/css src/styles",
+    "scss": "node-sass -o public/dist/css src/styles",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run scss && react-scripts build && mv build/dist/css/*.css build/static/css && rm -r build/dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
