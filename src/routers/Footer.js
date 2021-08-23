@@ -17,13 +17,13 @@ export const Footer = () => {
                 <a href="mailto:info@letsechoapp.com">Contact</a>
               </li>
               <li>
-                <a href="faq.html">FAQ's</a>
+                <a href="/faq.html">FAQ's</a>
               </li>
               <li>
-                <a href="privacy.html">Privacy</a>
+                <a href="/privacy.html">Privacy</a>
               </li>
               <li>
-                <a href="terms.html">Terms</a>
+                <a href="/terms.html">Terms</a>
               </li>
             </ul>
             <ul className="footer-social-links list-reset">
