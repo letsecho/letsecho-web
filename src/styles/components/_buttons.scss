@@ -217,6 +217,7 @@
 
 .nonMarginArticle {
   margin: 0px;
+  margin-bottom: 3%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -232,5 +233,11 @@
   }
   .specialHeadline{
     font-size: 13vw !important;
+  }
+  .finalBottons {
+    width: 172px;
+  }
+  .nonMarginArticle {
+    margin-bottom: 1%;
   }
 }
