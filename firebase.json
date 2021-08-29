@@ -20,13 +20,13 @@
       "src/*"
     ],
     "rewrites": [
+       {
+        "source": "/privacy",
+        "destination": "/privacy.html"
+      },
       {
         "source": "**",
         "destination": "/main.html"
-      },
-      {
-        "source": "/privacy",
-        "destination": "/privacy.html"
       }
     ]
   }
