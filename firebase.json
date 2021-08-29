@@ -20,14 +20,26 @@
       "src/*"
     ],
     "rewrites": [
-       {
+      {
+        "source": "**",
+        "destination": "/main.html"
+      },
+      {
+        "source": "/",
+        "destination": "/main.html"
+      },
+      {
         "source": "/privacy",
         "destination": "/privacy.html"
       },
       {
-        "source": "**",
-        "destination": "/main.html"
-      }
+        "source": "/terms",
+        "destination": "/terms.html"
+      },
+      {
+        "source": "/faq",
+        "destination": "/faq.html"
+      },
     ]
   }
 }
