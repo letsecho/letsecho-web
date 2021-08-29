@@ -39,7 +39,7 @@
       {
         "source": "/faq",
         "destination": "/faq.html"
-      },
+      }
     ]
   }
 }
