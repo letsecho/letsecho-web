@@ -12,7 +12,11 @@ export const GeneralRouter = () => {
       <Header/>
         <Switch>
           <Route exact path="/events/:eventId" component={ EventDesing } />
-          <Redirect to="/events/:eventId" />
+          <Route component={() => {
+            window.location.href = `${window.location.href}main.html`;
+            return null;
+          }} />
+          <Redirect to="/"/>
         </Switch>
       <Footer/>
     </div>
