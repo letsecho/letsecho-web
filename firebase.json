@@ -21,10 +21,6 @@
     ],
     "rewrites": [
       {
-        "source": "**",
-        "destination": "/main.html"
-      },
-      {
         "source": "/",
         "destination": "/main.html"
       },
@@ -39,6 +35,10 @@
       {
         "source": "/faq",
         "destination": "/faq.html"
+      },
+      {
+        "source": "**",
+        "destination": "/main.html"
       }
     ]
   }
