@@ -34,7 +34,7 @@
       },
       {
         "source": "**",
-        "destination": "/main.html"
+        "destination": "/index.html"
       }
     ]
   }
