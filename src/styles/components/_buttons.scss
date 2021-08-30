@@ -235,9 +235,17 @@
     font-size: 13vw !important;
   }
   .finalBottons {
-    width: 172px;
+    width: 220px;
   }
   .nonMarginArticle {
     margin-bottom: 1%;
+  }
+  .stickyPlacer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    padding-bottom: 5%;
   }
 }
