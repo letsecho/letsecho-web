@@ -18,7 +18,7 @@ export const EventTemplate = ({eventName = "", hostName = "", eventDescription =
           </p>
           <div className="stickyPlacer">
             <p className="joinName">
-              <b>Download to join →</b>
+              <b>Download to join <span className="bigArrow">➔</span></b>
             </p>
             <a href="https://apps.apple.com/app/letsecho/id1563740904">
               <img src={AppStore} alt="AppStore" className="finalBottons" />

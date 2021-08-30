@@ -206,7 +206,6 @@
 
 .finalBottons {
   width: 176px;
-  height: 57px;
   margin-right: 3%;
   display: inline !important;
 }
@@ -218,6 +217,11 @@
 .nonMarginArticle {
   margin: 0px;
   margin-bottom: 3%;
+}
+
+.bigArrow {
+  font-size: 25px;
+  margin-left: 1%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -235,7 +239,8 @@
     font-size: 13vw !important;
   }
   .finalBottons {
-    width: 220px;
+    width: 45%;
+    margin: 0% 1%;
   }
   .nonMarginArticle {
     margin-bottom: 1%;
@@ -246,6 +251,9 @@
     width: 100%;
     background-color: white;
     z-index: 1;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
+  }
+  .joinName {
+    margin: 3% 0%;
   }
 }
