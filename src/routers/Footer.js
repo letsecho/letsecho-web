@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Image from "../images/logo.svg";
 
 export const Footer = () => {
@@ -8,22 +9,28 @@ export const Footer = () => {
         <div className="container">
           <div className="site-footer-inner">
             <div className="brand footer-brand">
-              <a href="/main.html">
+              <Link className="navbar-brand" to="/index">
                 <img src={Image} alt="Letescho logo" width="40px"/>
-              </a>
+              </Link>
             </div>
             <ul className="footer-links list-reset">
               <li>
                 <a href="mailto:info@letsechoapp.com">Contact</a>
               </li>
               <li>
-                <a href="/faq.html">FAQ's</a>
+                <Link className="navbar-brand" to="/faq">
+                  FAQ's
+                </Link>
               </li>
               <li>
-                <a href="/privacy.html">Privacy</a>
+                <Link className="navbar-brand" to="/privacy">
+                  Privacy
+                </Link>
               </li>
               <li>
-                <a href="/terms.html">Terms</a>
+                <Link className="navbar-brand" to="/terms">
+                  Terms
+                </Link>
               </li>
             </ul>
             <ul className="footer-social-links list-reset">
