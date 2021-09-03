@@ -3,16 +3,16 @@ import { useParams } from 'react-router-dom';
 
 import { useFetchEvent } from '../hooks/useFetchEvent';
 import { EventTemplate } from './EventTemplate';
+import { NotFoundEvent } from './NotFoundEvent';
 
 export const EventDesing = () => {
 
   const { eventId } = useParams();
-
   const { data: baseinfo, loading } = useFetchEvent(eventId);
 
   return (
     <main>
-      {!loading && <EventTemplate eventName={baseinfo.name} hostName={baseinfo.createdBy.name} eventDescription={baseinfo.description} imageUrl={baseinfo.banner.url} imageName={baseinfo.banner.name} />}
+      {((!loading)&&(Object.entries(baseinfo).length > 0)) ? <EventTemplate eventName={baseinfo.name} hostName={baseinfo.createdBy.name} eventDescription={baseinfo.description} imageUrl={baseinfo.banner.url} imageName={baseinfo.banner.name} /> : <NotFoundEvent/>}
     </main>
   )
 

@@ -11,6 +11,9 @@ export const getEvent = async(eventID) => {
       "X-Parse-REST-API-Key": REACT_APP_REST_API_KEY
     }
   });
-  const eventResponse = await resp.json();
+  let eventResponse = await resp.json();
+  if (eventResponse.hasOwnProperty('code')&&(eventResponse.code === 101)) {
+    eventResponse = {};
+  }
   return eventResponse;
 }

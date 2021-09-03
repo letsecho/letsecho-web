@@ -9,9 +9,9 @@ export const Footer = () => {
         <div className="container">
           <div className="site-footer-inner">
             <div className="brand footer-brand">
-              <Link className="navbar-brand" to="/index">
+              <a href="/index">
                 <img src={Image} alt="Letescho logo" width="40px"/>
-              </Link>
+              </a>
             </div>
             <ul className="footer-links list-reset">
               <li>
