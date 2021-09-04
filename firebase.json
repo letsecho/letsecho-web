@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "/",
+    "public": "build",
     "headers": [
       {
         "source": "apple-app-site-association",
@@ -16,10 +16,22 @@
     "ignore": [
       "firebase.json",
       "**/.*",
-      "node_modules/**",
+      "**/node_modules/**",
       "src/*"
     ],
     "rewrites": [
+      {
+        "source": "/privacy",
+        "destination": "/privacy.html"
+      },
+      {
+        "source": "/terms",
+        "destination": "/terms.html"
+      },
+      {
+        "source": "/faq",
+        "destination": "/faq.html"
+      },
       {
         "source": "**",
         "destination": "/index.html"

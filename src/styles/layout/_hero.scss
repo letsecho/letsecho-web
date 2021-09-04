@@ -34,14 +34,14 @@
 	&::before {
 		top: 0;
 		height: 159px;
-		background-image: url('../images/hero-bg-top.svg');
+		background-image: url('../../images/hero-bg-top.svg');
 		background-size: 720px 159px;
 	}
 
 	&::after {
 		bottom: 42%;
 		height: 173px;
-		background-image: url('../images/hero-bg-bottom.svg');
+		background-image: url('../../images/hero-bg-bottom.svg');
 		background-size: 720px 173px;
 	}
 }

@@ -23,6 +23,10 @@
     padding-bottom: 48px;
 }
 
+.marginFixer {
+  margin: 0 3px;
+}
+
 @include media( '>medium' ) {
 
     .section-inner {
@@ -50,6 +54,20 @@ main {
       margin: 0;
     }
 
+    h1.specialHeadline {
+      text-align: left;
+      font-size: $article-h1-special;
+      line-height: 1;
+      margin: 0;
+    }
+
+    h2.eventName {
+      text-align: left;
+      font-size: $article-h2-special;
+      line-height: 1;
+      margin: 0;
+    }
+
     p {
       margin-top: 32px;
       margin-bottom: 32px;
@@ -61,13 +79,13 @@ main {
     position: absolute;
     right: 0;
     display: block;
-    width: 37%;
+    width: 40%;
   }
 
   section.float img {
     width: 100%;
   }
-  
+
   @include media( '<medium' ) {
     article {
       width: 100%;
