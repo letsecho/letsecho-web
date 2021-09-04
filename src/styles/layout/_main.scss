@@ -23,6 +23,10 @@
     padding-bottom: 48px;
 }
 
+.marginFixer {
+  margin: 0 3px;
+}
+
 @include media( '>medium' ) {
 
     .section-inner {

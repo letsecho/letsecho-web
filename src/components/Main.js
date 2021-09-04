@@ -1,5 +1,5 @@
 import React from 'react';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import { Link } from 'react-router-dom';
 
 import Logo from "../images/logo.svg";
@@ -41,8 +41,8 @@ export const Main = () => {
                   <h1 className="hero-title mt-0">Letsecho</h1>
                   <p className="hero-paragraph">Discover spontaneous activities, meet people, and make meaningful connections.</p>
                   <div className="hero-cta">
-                    <a className="button button-primary button-wide-mobile" href="https://apps.apple.com/app/letsecho/id1563740904">Download iOS</a>
-                    <a className="button button-primary button-wide-mobile" href="https://play.google.com/store/apps/details?id=com.letsecho.letsechoapp">Download Android</a>
+                    <a className="button button-primary button-wide-mobile marginFixer" href="https://apps.apple.com/app/letsecho/id1563740904">Download iOS</a>
+                    <a className="button button-primary button-wide-mobile marginFixer" href="https://play.google.com/store/apps/details?id=com.letsecho.letsechoapp">Download Android</a>
                   </div>
                 </div>
                 <div className="mockup-container">
