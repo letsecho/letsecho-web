@@ -21,7 +21,7 @@ export const Main = () => {
             <div className="site-header-inner">
               <div className="brand header-brand">
                 <h1 className="m-0">
-                  <a href="/index">
+                  <a href="/">
                     <img className="header-logo-image" src={Logo} alt="Logo" width="50px"/>
                   </a>
                 </h1>
@@ -125,7 +125,7 @@ export const Main = () => {
     				<div className="container">
     					<div className="site-footer-inner">
     						<div className="brand footer-brand">
-                  <a href="/index">
+                  <a href="/">
     								<img src={Logo} alt="Letescho logo" width="40px"/>
                   </a>
     						</div>

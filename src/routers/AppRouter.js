@@ -13,8 +13,8 @@ export const AppRouter = () => {
     <Router>
       <div>
         <Switch>
-          <Route exact path="/index" component={ Main } />
-          <Route path="/" component={ GeneralRouter } />
+          <Route exact path="/" component={ Main } />
+          <Route component={ GeneralRouter } />
         </Switch>
       </div>
     </Router>

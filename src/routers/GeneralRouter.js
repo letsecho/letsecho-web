@@ -18,7 +18,7 @@ export const GeneralRouter = () => {
           <Route exact path="/faq" component={ Faq } />
           <Route exact path="/privacy" component={ Privacy } />
           <Route exact path="/terms" component={ Terms } />
-          <Redirect to="/index" />
+          <Redirect to="/" />
         </Switch>
       <Footer/>
     </div>
