@@ -15,6 +15,11 @@ export const Main = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Letsecho</title>
+        <meta property="og:title" content="Letsecho" />
+        <meta property="og:description" content="Discover spontaneous activities, meet people, and make meaningful connections." />
+      </Helmet>
       <div className="body-wrap boxed-container">
         <header className="site-header text-light">
           <div className="container">

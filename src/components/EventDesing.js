@@ -1,4 +1,6 @@
 import React from 'react';
+import Helmet from 'react-helmet';
+
 import { useParams } from 'react-router-dom';
 
 import { useFetchEvent } from '../hooks/useFetchEvent';
@@ -11,9 +13,16 @@ export const EventDesing = () => {
   const { data: baseinfo, loading } = useFetchEvent(eventId);
 
   return (
-    <main>
-      {((!loading)&&(Object.entries(baseinfo).length > 0)) ? <EventTemplate eventName={baseinfo.name} hostName={baseinfo.createdBy.name} eventDescription={baseinfo.description} imageUrl={baseinfo.banner.url} imageName={baseinfo.banner.name} /> : <NotFoundEvent/>}
-    </main>
+    <>
+      <Helmet>
+        <title>{((!loading)&&(Object.entries(baseinfo).length > 0)) ? baseinfo.name : "Event"}</title>
+        <meta property="og:title" content={((!loading)&&(Object.entries(baseinfo).length > 0)) ? baseinfo.name : "Event not Found"} />
+        <meta property="og:description" content={((!loading)&&(Object.entries(baseinfo).length > 0)) ? baseinfo.description : "Event not Found"} />
+      </Helmet>
+      <main>
+        {((!loading)&&(Object.entries(baseinfo).length > 0)) ? <EventTemplate eventName={baseinfo.name} hostName={baseinfo.createdBy.name} eventDescription={baseinfo.description} imageUrl={baseinfo.banner.url} imageName={baseinfo.banner.name} /> : <NotFoundEvent/>}
+      </main>
+    </>
   )
 
 }
