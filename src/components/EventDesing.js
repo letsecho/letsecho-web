@@ -18,6 +18,7 @@ export const EventDesing = () => {
         <title>{((!loading)&&(Object.entries(baseinfo).length > 0)) ? baseinfo.name : "Event"}</title>
         <meta property="og:title" content={((!loading)&&(Object.entries(baseinfo).length > 0)) ? baseinfo.name : "Event not Found"} />
         <meta property="og:description" content={((!loading)&&(Object.entries(baseinfo).length > 0)) ? baseinfo.description : "Event not Found"} />
+        <meta property="og:image" content={((!loading)&&(Object.entries(baseinfo).length > 0)) ? baseinfo.banner.url : ""} />
       </Helmet>
       <main>
         {((!loading)&&(Object.entries(baseinfo).length > 0)) ? <EventTemplate eventName={baseinfo.name} hostName={baseinfo.createdBy.name} eventDescription={baseinfo.description} imageUrl={baseinfo.banner.url} imageName={baseinfo.banner.name} /> : <NotFoundEvent/>}
