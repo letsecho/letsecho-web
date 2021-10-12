@@ -9,13 +9,15 @@ export const useFetchEvent = (eventID) => {
   });
 
   useEffect(() => {
-    getEvent(eventID)
-      .then(eventResponse => {
-        setState({
-          data: eventResponse,
-          loading: false
+    setTimeout(function() {
+      getEvent(eventID)
+        .then(eventResponse => {
+          setState({
+            data: eventResponse,
+            loading: false
+          });
         });
-      });
+    }, 1000);
   }, [eventID]);
 
   return state;
