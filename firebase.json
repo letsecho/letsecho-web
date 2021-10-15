@@ -21,6 +21,11 @@
     ],
     "rewrites": [
       {
+        "source": "**",
+        "destination": "/index.html",
+        "function": "preRender"
+      },
+      {
         "source": "/privacy",
         "destination": "/privacy.html"
       },
@@ -31,10 +36,6 @@
       {
         "source": "/faq",
         "destination": "/faq.html"
-      },
-      {
-        "source": "**",
-        "destination": "/index.html"
       }
     ]
   }

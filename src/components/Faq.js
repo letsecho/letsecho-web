@@ -1,14 +1,8 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 
 export const Faq = () => {
   return (
     <>
-      <Helmet>
-        <title>FAQ</title>
-        <meta property="og:title" content="Terms" />
-        <meta property="og:description" content="Discover spontaneous activities, meet people, and make meaningful connections." />
-      </Helmet>
       <main>
         <article>
           <h1 className="specialHeadline">FAQ</h1>

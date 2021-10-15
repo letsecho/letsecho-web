@@ -1,15 +1,9 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 
 export const Privacy = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Privacy</title>
-        <meta property="og:title" content="Privacy" />
-        <meta property="og:description" content="Discover spontaneous activities, meet people, and make meaningful connections." />
-      </Helmet>
       <main>
         <article>
           <h1 className="specialHeadline">Privacy Policy</h1>

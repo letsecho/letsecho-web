@@ -1,14 +1,8 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 
 export const Terms = () => {
   return (
     <>
-      <Helmet>
-        <title>Terms</title>
-        <meta property="og:title" content="Terms" />
-        <meta property="og:description" content="Discover spontaneous activities, meet people, and make meaningful connections." />
-      </Helmet>
       <main>
         <article>
           <h1 className="specialHeadline">Terms &amp; Conditions</h1>

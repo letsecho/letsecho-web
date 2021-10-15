@@ -1,6 +1,6 @@
 import React from 'react';
-import { Helmet } from "react-helmet";
 import { Link } from 'react-router-dom';
+import Helmet from 'react-helmet';
 
 import Logo from "../images/logo.svg";
 import IPhone from "../images/iphone-hero-bg.svg";
@@ -15,11 +15,6 @@ export const Main = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Letsecho</title>
-        <meta property="og:title" content="Letsecho" />
-        <meta property="og:description" content="Discover spontaneous activities, meet people, and make meaningful connections." />
-      </Helmet>
       <div className="body-wrap boxed-container">
         <header className="site-header text-light">
           <div className="container">
