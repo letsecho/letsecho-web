@@ -18,7 +18,7 @@ exports.preRender = functions.https.onRequest((request, response) => {
       setMetas("Terms", "Terms and Conditions");
     } break;
     default: {
-      setMetas("Letsecho", "Discover spontaneous activities");
+      setMetas("TestA", "Discover spontaneous activities");
     }
   }
   response.status(200).send(index);
