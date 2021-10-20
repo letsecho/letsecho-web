@@ -21,7 +21,7 @@
     "rewrites": [
       {
         "source": "**",
-        "function": "preRender",
+        "function": "preRender"
       }
     ]
   },
