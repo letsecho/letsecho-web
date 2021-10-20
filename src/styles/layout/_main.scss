@@ -27,6 +27,11 @@
   margin: 0 3px;
 }
 
+.centerLoading {
+  margin: 0% auto;
+  margin-bottom: 6%;
+}
+
 @include media( '>medium' ) {
 
     .section-inner {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Helmet } from "react-helmet";
 import { Link } from 'react-router-dom';
+import Helmet from 'react-helmet';
 
 import Logo from "../images/logo.svg";
 import IPhone from "../images/iphone-hero-bg.svg";
