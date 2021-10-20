@@ -1,41 +1,19 @@
 {
   "hosting": {
     "public": "build",
-    "headers": [
-      {
-        "source": "apple-app-site-association",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ]
-      }
-    ],
-    "appAssociation": "NONE",
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**",
-      "src/*"
+      "**/node_modules/**"
     ],
     "rewrites": [
-      {
-        "source": "/privacy",
-        "destination": "/privacy.html"
-      },
-      {
-        "source": "/terms",
-        "destination": "/terms.html"
-      },
-      {
-        "source": "/faq",
-        "destination": "/faq.html"
-      },
       {
         "source": "**",
         "destination": "/index.html"
       }
     ]
+  },
+  "functions": {
+    "source": "functions"
   }
 }
