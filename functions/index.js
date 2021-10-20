@@ -2,7 +2,7 @@ const functions = require("firebase-functions");
 const fs = require("fs");
 exports.preRender = functions.https.onRequest((request, response) => {
   const path = request.path ? request.path.split("/") : request.path;
-  let index = fs.readFileSync("../build/index.html").toString();
+  let index = fs.readFileSync("./web/index.html").toString();
   const setMetas = (title, description) => {
     index = index.replace("INJECTED_TITLE", title);
     index = index.replace("INJECTED_DESCRIPTION", description);
