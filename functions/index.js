@@ -2,6 +2,14 @@ const functions = require("firebase-functions");
 const fs = require("fs");
 const config = functions.config();
 const {rest, api} = config.slack;
+
+const paths = {
+	FAQ: "faq",
+	PRIVACY: "privacy",
+	EVENTS: "events",
+	TERMS: "terms",
+};
+
 exports.preRender = functions.https.onRequest((request, response) => {
   const path = request.path ? request.path.split("/") : request.path;
   let index = fs.readFileSync("./web/index.html").toString();
@@ -10,16 +18,16 @@ exports.preRender = functions.https.onRequest((request, response) => {
     index = index.replace("INJECTED_DESCRIPTION", description);
   };
   switch (path[1]) {
-    case "faq": {
+    case paths.FAQ: {
       setMetas("FAQ", "Frequently Asked Questions");
     } break;
-    case "privacy": {
+    case paths.PRIVACY: {
       setMetas("Privacy", "Privacy Politics");
     } break;
-    case "terms": {
+    case paths.TERMS: {
       setMetas("Terms", "Terms and Conditions");
     } break;
-    case "events": {
+    case paths.EVENTS: {
       let eventResponse = getEvent(path[2]);
       setMetas(eventResponse.data.name, eventResponse.data.description);
     } break;
