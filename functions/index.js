@@ -21,10 +21,10 @@ exports.preRender = functions.https.onRequest((request, response) => {
     } break;
     case "events": {
       let eventResponse = getEvent(path[2]);
-      setMetas(eventResponse.data.name, "Terms and Conditions");
+      setMetas(eventResponse.data.name, eventResponse.data.description);
     } break;
     default: {
-      setMetas("TestA", "Discover spontaneous activities");
+      setMetas("Letsecho", "Discover spontaneous activities");
     }
   }
   response.status(200).send(index);
