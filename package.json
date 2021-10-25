@@ -36,7 +36,6 @@
     "start-function": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log"
-
   },
   "main": "functions/index.js",
   "eslintConfig": {

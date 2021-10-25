@@ -1,7 +1,5 @@
 const functions = require("firebase-functions");
 const fs = require("fs");
-const config = functions.config();
-const {rest, api} = config.slack;
 
 const paths = {
 	FAQ: "faq",
