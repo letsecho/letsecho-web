@@ -34,12 +34,8 @@
         "destination": "/faq.html"
       },
       {
-        "source": "/test",
-        "destination": "preRender"
-      },
-      {
         "source": "**",
-        "destination": "/index.html"
+        "destination": "preRender"
       }
     ]
   }
