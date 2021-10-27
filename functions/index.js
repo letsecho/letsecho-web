@@ -2,60 +2,45 @@ const functions = require("firebase-functions");
 const fs = require("fs");
 const fetch = require("node-fetch");
 
-const paths = {
-	FAQ: "faq",
-	PRIVACY: "privacy",
-	EVENTS: "events",
-	TERMS: "terms",
-};
+const config = functions.config();
+const {rest, api} = config.slack;
 
 exports.preRender = functions.https.onRequest((request, response) => {
   const path = request.path ? request.path.split("/") : request.path;
+	const routeEvent = (typeof path[1] === 'undefined') ? false : path[1];
+	const eventId = (typeof path[2] === 'undefined') ? false : path[2];
   let index = fs.readFileSync("./web/index.html").toString();
   const setMetas = (title, description) => {
-    index = index.replaceAll("INJECTED_TITLE", title);
+  	index = index.replaceAll("INJECTED_TITLE", title);
     index = index.replaceAll("INJECTED_DESCRIPTION", description);
   };
-  switch (path[1]) {
-    case paths.FAQ: {
-      setMetas("FAQ", "Frequently Asked Questions");
-    } break;
-    case paths.PRIVACY: {
-      setMetas("Privacy", "Privacy Politics");
-    } break;
-    case paths.TERMS: {
-      setMetas("Terms", "Terms and Conditions");
-    } break;
-    case paths.EVENTS: {
-      let eventResponse =  getEvent(path[2]).then(value => {
-				 console.log(value);
-				 setMetas(value.name, value.description);
-				 response.status(200).send(index);
-			 } ).catch(console.error)
-      //setMetas(eventResponse.data.name, eventResponse.data.description);
-    } break;
-    default: {
-      setMetas("Letsecho", "Discover spontaneous activities");
-    }
-  }
+	setMetas("Letsecho", "Discover spontaneous activities");
+	if ((path)&&(routeEvent)&&(eventId)) {
+		let eventResponse = getEvent(eventId).then(value => {
+			if (value) {
+				setMetas(value.name, value.description);
+			}
+		}).catch(console.error);
+	}
+	response.status(200).send(index);
 });
 
 const getEvent = async(pathName) => {
   const url = `https://api.letsechoapp.com/classes/Event/${pathName}`;
   const resp = await fetch(url, {
     method: 'GET',
-    mode: 'cors',
-    cache: 'no-cache',
     headers: {
       "X-Parse-Application-Id": api,
       "X-Parse-REST-API-Key": rest
     }
   });
   let eventResponse = await resp.json();
+	if (eventResponse.hasOwnProperty('code')&&(eventResponse.code === 101)) {
+		return false;
+	}
   return eventResponse;
 }
 
 String.prototype.replaceAll = function(search, replacement) {
-    var target = this;
-    return target.replace(new RegExp(search, 'g'), replacement);
+  return this.replace(new RegExp(search, 'g'), replacement);
 };
