@@ -12,7 +12,7 @@ export const EventDesing = () => {
 
   return (
     <main>
-      {((!loading)&&(Object.entries(baseinfo).length > 0)) ? <EventTemplate eventName={baseinfo.name} hostName={baseinfo.createdBy.name} eventDescription={baseinfo.description} imageUrl={baseinfo.banner.url} imageName={baseinfo.banner.name} /> : <NotFoundEvent/>}
+      {((!loading)&&(Object.entries(baseinfo).length > 0)) ? <EventTemplate eventName={baseinfo.name} hostName={baseinfo.createdBy.name} eventDescription={baseinfo.description} imageUrl={baseinfo.banner?.url} imageName={baseinfo.banner?.name} /> : <NotFoundEvent/>}
     </main>
   )
 
