@@ -108,6 +108,17 @@ main {
     width: 100%;
   }
 
+  section.notFoundImage {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 50%;
+  }
+
+  section.notFoundImage img {
+    width: 100%;
+  }
+
   @include media( '<medium' ) {
     article {
       width: 100%;
@@ -117,10 +128,9 @@ main {
       padding: 0%;
     }
 
-    section.float {
+    section.float, section.notFoundImage {
       position: relative;
       float: none;
-      // background-color: lightblue;
       display: block;
       width: 100%;
     }

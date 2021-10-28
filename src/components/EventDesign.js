@@ -5,7 +5,7 @@ import { useFetchEvent } from '../hooks/useFetchEvent';
 import { EventTemplate } from './EventTemplate';
 import { NotFoundEvent } from './NotFoundEvent';
 
-export const EventDesing = () => {
+export const EventDesign = () => {
 
   const { eventId } = useParams();
   const { data: baseinfo, loading } = useFetchEvent(eventId);
