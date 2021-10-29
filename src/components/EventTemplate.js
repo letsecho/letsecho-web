@@ -1,14 +1,14 @@
 import React from 'react';
 import PlayStore from "../images/playstore.png";
 import AppStore from "../images/appstore.png";
-import Logo from "../images/NotFound.jpg";
+import NotFoundImage from "../images/NotFound.jpg";
 
 export const EventTemplate = ({eventName = "", hostName = "", eventDescription = "", imageUrl = false, imageName = "Letsecho"}) => {
   return (
     <>
       <section className="sectionDisplay">
         <section className={(imageUrl) ? "float": "notFoundImage"}>
-          <img src={(imageUrl) ? imageUrl: Logo} alt={imageName} />
+          <img src={(imageUrl) ? imageUrl: NotFoundImage} alt={imageName} />
         </section>
         <article className="nonMarginArticle">
           <p className="hostName">Hosted by: {hostName}</p>
