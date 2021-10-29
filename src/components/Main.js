@@ -114,7 +114,7 @@ export const Main = () => {
     								<h2 className="section-title mt-0">Join the wave</h2>
     								<p className="section-paragraph">Subscribe to get Letsecho’s updates to your email address.</p>
     								<div className="cta-cta">
-    									<a className="button button-primary button-wide-mobile" href="http://eepurl.com/hBi_1v">Suscribe</a>
+    									<a className="button button-primary button-wide-mobile" href="http://eepurl.com/hBi_1v">Subscribe</a>
     								</div>
     							</div>
     						</div>
