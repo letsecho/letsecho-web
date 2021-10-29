@@ -27,6 +27,28 @@
   margin: 0 3px;
 }
 
+.spinner {
+  animation: spinnerLogo steps(8) 2s infinite;
+}
+
+@keyframes spinnerLogo {
+  0% {
+    transform: rotate(0deg)
+  }
+  25% {
+    transform: rotate(90deg)
+  }
+  50% {
+    transform: rotate(180deg)
+  }
+  75% {
+    transform: rotate(270deg)
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @include media( '>medium' ) {
 
     .section-inner {
@@ -86,6 +108,17 @@ main {
     width: 100%;
   }
 
+  section.notFoundImage {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 50%;
+  }
+
+  section.notFoundImage img {
+    width: 100%;
+  }
+
   @include media( '<medium' ) {
     article {
       width: 100%;
@@ -95,10 +128,9 @@ main {
       padding: 0%;
     }
 
-    section.float {
+    section.float, section.notFoundImage {
       position: relative;
       float: none;
-      background-color: lightblue;
       display: block;
       width: 100%;
     }
