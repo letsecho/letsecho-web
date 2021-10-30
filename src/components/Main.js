@@ -112,9 +112,9 @@ export const Main = () => {
     						<div className="cta-inner section-inner">
     							<div className="cta-header text-center">
     								<h2 className="section-title mt-0">Join the wave</h2>
-    								<p className="section-paragraph">Ready to echo? Soon you will create and join echos. Subscribe to get first access.</p>
+    								<p className="section-paragraph">Subscribe to get Letsecho’s updates to your email address.</p>
     								<div className="cta-cta">
-    									<a className="button button-primary button-wide-mobile" href="http://eepurl.com/hBi_1v">Get early access</a>
+    									<a className="button button-primary button-wide-mobile" href="http://eepurl.com/hBi_1v">Subscribe</a>
     								</div>
     							</div>
     						</div>
