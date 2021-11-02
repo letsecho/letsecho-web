@@ -27,8 +27,31 @@
   margin: 0 3px;
 }
 
-@include media( '>medium' ) {
+.spinner {
+  width: 35%;
+  margin: 0 auto;
+  animation: spinnerLogo steps(8) 2s infinite;
+}
 
+@keyframes spinnerLogo {
+  0% {
+    transform: rotate(0deg)
+  }
+  25% {
+    transform: rotate(90deg)
+  }
+  50% {
+    transform: rotate(180deg)
+  }
+  75% {
+    transform: rotate(270deg)
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@include media( '>medium' ) {
     .section-inner {
         padding-top: 88px;
         padding-bottom: 88px;
@@ -95,10 +118,13 @@ main {
       padding: 0%;
     }
 
+    .spinner {
+      width: 100%;
+    }
+
     section.float {
       position: relative;
       float: none;
-      background-color: lightblue;
       display: block;
       width: 100%;
     }
