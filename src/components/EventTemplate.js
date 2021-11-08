@@ -1,7 +1,7 @@
 import React from 'react';
 import PlayStore from "../images/playstore.png";
 import AppStore from "../images/appstore.png";
-import NotFoundImage from "../images/NotFound.jpg";
+import NotFoundImage from "../images/Square.svg";
 
 export const EventTemplate = ({eventName = "", hostName = "", eventDescription = "", imageUrl = false, imageName = "Letsecho"}) => {
   return (
