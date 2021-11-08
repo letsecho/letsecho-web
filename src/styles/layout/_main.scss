@@ -28,27 +28,8 @@
 }
 
 .spinner {
-  width: 35%;
+  width: 40%;
   margin: 0 auto;
-  animation: spinnerLogo steps(8) 2s infinite;
-}
-
-@keyframes spinnerLogo {
-  0% {
-    transform: rotate(0deg)
-  }
-  25% {
-    transform: rotate(90deg)
-  }
-  50% {
-    transform: rotate(180deg)
-  }
-  75% {
-    transform: rotate(270deg)
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 @include media( '>medium' ) {

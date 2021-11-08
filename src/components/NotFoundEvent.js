@@ -6,7 +6,8 @@ export const NotFoundEvent = () => {
     <>
       <section className="sectionDisplay">
         <article className="notFoundArticle">
-          <h2 className="eventName">Code Invalid: Event not found.</h2>
+          <h2 className="eventName">Code Invalid:</h2>
+          <h2 className="eventName">Event not found.</h2>
         </article>
       </section>
       <div className="clearfixed"></div>
