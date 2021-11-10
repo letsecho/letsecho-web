@@ -6,7 +6,7 @@ export const EventTemplate = ({eventName = "", hostName = "", eventDescription =
   return (
     <>
       <section className="sectionDisplay">
-        <section className={(imageUrl) ? "float": "notFoundImage"}>
+        <section className="float">
           <img src={(imageUrl) ? imageUrl: NotFoundImage} alt={imageName} />
         </section>
         <article className="nonMarginArticle">

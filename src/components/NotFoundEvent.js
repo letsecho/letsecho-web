@@ -6,7 +6,7 @@ export const NotFoundEvent = () => {
   return (
     <>
       <section className="sectionDisplay">
-        <section className="notFoundImage">
+        <section className="float">
           <img src={NotFoundImage} alt="Letsecho Not Found" />
         </section>
         <article className="nonMarginArticle">
