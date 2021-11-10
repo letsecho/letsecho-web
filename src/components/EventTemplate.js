@@ -1,5 +1,5 @@
 import React from 'react';
-import NotFoundImage from "../images/NotFound.jpg";
+import NotFoundImage from "../images/Square.svg";
 import { DownloadSection } from './DownloadSection';
 
 export const EventTemplate = ({eventName = "", hostName = "", eventDescription = "", imageUrl = false, imageName = "Letsecho"}) => {
