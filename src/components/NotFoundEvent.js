@@ -1,14 +1,14 @@
 import React from 'react';
 import PlayStore from "../images/playstore.png";
 import AppStore from "../images/appstore.png";
-import NotFound from "../images/NotFound.jpg";
+import NotFoundImage from "../images/Square.svg";
 
 export const NotFoundEvent = () => {
   return (
     <>
       <section className="sectionDisplay">
         <section className="notFoundImage">
-          <img src={NotFound} alt="Letsecho Not Found" />
+          <img src={NotFoundImage} alt="Letsecho Not Found" />
         </section>
         <article className="nonMarginArticle">
           <p className="hostName">Event id is not valid</p>
