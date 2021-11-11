@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { useFetchEvent } from '../hooks/useFetchEvent';
 import { EventTemplate } from './EventTemplate';
 import { NotFoundEvent } from './NotFoundEvent';
+import { LoadingSection } from './LoadingSection';
 
 export const EventDesign = () => {
 
@@ -12,7 +13,7 @@ export const EventDesign = () => {
 
   return (
     <main>
-      {((!loading)&&(Object.entries(baseinfo).length > 0)) ? <EventTemplate eventName={baseinfo.name} hostName={baseinfo.createdBy.name} eventDescription={baseinfo.description} imageUrl={baseinfo.banner?.url} imageName={baseinfo.banner?.name} /> : <NotFoundEvent/>}
+      {(!loading) ? ((Object.entries(baseinfo).length > 0) ? <EventTemplate eventName={baseinfo.name} hostName={baseinfo.createdBy.name} eventDescription={baseinfo.description} imageUrl={baseinfo.banner?.url} imageName={baseinfo.banner?.name} /> : <NotFoundEvent/>) : (<LoadingSection/>)}
     </main>
   )
 
