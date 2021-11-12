@@ -45,7 +45,7 @@ main {
   position: relative;
 
   article {
-    width: 62%;
+    width: 60%;
     margin: 124px 0;
     padding-right: 12%;
     box-sizing: border-box;
@@ -80,7 +80,7 @@ main {
   }
 
   section.float {
-    position: absolute;
+    float: right;
     right: 0;
     display: block;
     width: 40%;
