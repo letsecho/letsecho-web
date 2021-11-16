@@ -17,8 +17,8 @@ export const EventTemplate = ({eventName = "", hostName = "", eventDescription =
           </p>
           <DownloadSection />
         </article>
+        <div className="clearfixed"></div>
       </section>
-      <div className="clearfixed"></div>
     </>
   )
 }
