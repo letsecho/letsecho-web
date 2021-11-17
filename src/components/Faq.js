@@ -10,7 +10,7 @@ export const Faq = () => {
   return (
     <main>
       <article>
-        <h1 className="specialHeadline">FAQ</h1>
+        <h1 className="eventName">FAQ</h1>
         <h2>What's Letsecho app?</h2>
         <p>Letsecho allows you to make friends spontaneously in your area by attending activities together. Discover and join gatherings with people nearby.</p>
         <p>Create gatherings using curated suggestions based on location, day, and time.</p>
