@@ -1,6 +1,12 @@
 import React from 'react';
+import { useEffect } from 'react';
 
 export const Terms = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+
   return (
     <main>
       <article>

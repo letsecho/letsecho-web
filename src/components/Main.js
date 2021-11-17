@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { Helmet } from "react-helmet";
 import { Link } from 'react-router-dom';
 
@@ -12,6 +13,10 @@ import IPhoneEvent from "../images/iphone-event.png";
 import IPhoneComments from "../images/iphone-comments.png";
 
 export const Main = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
 
   return (
     <>

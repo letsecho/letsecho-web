@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 import { useFetchEvent } from '../hooks/useFetchEvent';
@@ -10,6 +11,10 @@ export const EventDesign = () => {
 
   const { eventId } = useParams();
   const { data: baseinfo, loading } = useFetchEvent(eventId);
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
 
   return (
     <main>
