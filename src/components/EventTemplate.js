@@ -10,8 +10,8 @@ export const EventTemplate = ({eventName = "", hostName = "", eventDescription =
           <img src={(imageUrl) ? imageUrl: NotFoundImage} alt={imageName} />
         </section>
         <article className="nonMarginArticle">
-          <p className="hostName">Hosted by: {hostName}</p>
-          <h2 className="eventName">{eventName}</h2>
+          <h3 className="hostName">Hosted by: {hostName}</h3>
+          <h1 className="eventName">{eventName}</h1>
           <p>
             {eventDescription}
           </p>
