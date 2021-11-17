@@ -10,8 +10,7 @@ export const LoadingSection = () => {
           <img src={NotFoundImage} alt="Loading..." />
         </section>
         <article className="nonMarginArticle">
-          <p className="hostName"></p>
-          <h2 className="eventName">Loading</h2>
+          <h1 className="eventName">Loading</h1>
           <p>
             The current event is loading. To join the event and participate in the conversation, please download the Letsecho app.
           </p>

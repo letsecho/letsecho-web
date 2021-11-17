@@ -5,9 +5,9 @@ import AppStore from "../images/appstore.png";
 export const DownloadSection = () => {
   return (
     <div className="stickyPlacer">
-      <p className="joinName">
+      <h2 className="joinName">
         <b>Download to join <span className="bigArrow">➔</span></b>
-      </p>
+      </h2>
       <a href="https://apps.apple.com/app/letsecho/id1563740904">
         <img src={AppStore} alt="AppStore" className="finalBottons" />
       </a>

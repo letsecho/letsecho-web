@@ -18,7 +18,7 @@ export const Terms = () => {
         </section>
       </section>
       <article className="nonMarginArticle">
-        <h1 className="specialHeadline">Terms &amp; Conditions</h1>
+        <h1 className="eventName">Terms &amp; Conditions</h1>
         <p>
           By downloading or using the app, these terms will
           automatically apply to you – you should make sure therefore

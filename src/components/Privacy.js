@@ -18,7 +18,7 @@ export const Privacy = () => {
         </section>
       </section>
       <article className="nonMarginArticle">
-        <h1 className="specialHeadline">Privacy Policy</h1>
+        <h1 className="eventName">Privacy Policy</h1>
         <p>
           Letsecho built the Letsecho app as
           an Ad Supported app. This SERVICE is provided by
