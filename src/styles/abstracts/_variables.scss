@@ -34,8 +34,8 @@ $color: (
 // Typography ---------------------------------
 // --------------------------------------------
 $font__family: (
-	base: '"Heebo", sans-serif', // font-family(base)
-	heading: '"Oxygen", sans-serif', // font-family(heading)
+	base: '"Helvetica Neue", sans-serif', // font-family(base)
+	heading: '"Helvetica", sans-serif', // font-family(heading)
 	code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace', // font-family(code)
 	pre: '"Courier 10 Pitch", Courier, monospace' // font-family(pre)
 );
@@ -94,7 +94,7 @@ $container__width-sm: 800px;
 $font-stack: "Helvetica Neue", "Helvetica", sans-serif;
 
 $primary-h1-font-size: 34px;
-$article-h1-font-size: 135px;
+$article-h1-font-size: 120px;
 
 $article-h1-special: 8vw;
 $article-h2-special: 5vw;

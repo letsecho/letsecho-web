@@ -172,7 +172,7 @@
 
 .hostName {
   text-align: left;
-  margin-bottom: 0%;
+  margin-bottom: 28px;
   opacity: 1;
 }
 
@@ -216,6 +216,7 @@
 }
 
 .nonMarginArticle {
+  word-wrap: break-word;
   margin: 0px;
   margin-bottom: 3%;
   float: left;
@@ -252,6 +253,7 @@
     margin: 0% 1%;
   }
   .nonMarginArticle {
+    word-wrap: normal;
     margin-bottom: 1%;
   }
   .stickyPlacer {

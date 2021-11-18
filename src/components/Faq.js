@@ -16,17 +16,18 @@ export const Faq = () => {
         <section className="float">
           <img src={NotFoundImage} alt="Letsecho" />
         </section>
+        <article className="nonMarginArticle">
+          <h3 className="hostName">Questions and answers</h3>
+          <h1 className="eventName">FAQ</h1>
+          <h2>What's Letsecho app?</h2>
+          <p>Letsecho allows you to make friends spontaneously in your area by attending activities together. Discover and join gatherings with people nearby.</p>
+          <p>Create gatherings using curated suggestions based on location, day, and time.</p>
+          <h2>Contact Us</h2>
+          <p>If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us at info@letsechoapp.com.</p>
+          <DownloadSection />
+        </article>
+        <div className="clearfixed"></div>
       </section>
-      <article className="nonMarginArticle">
-        <h1 className="eventName">FAQ</h1>
-        <h2>What's Letsecho app?</h2>
-        <p>Letsecho allows you to make friends spontaneously in your area by attending activities together. Discover and join gatherings with people nearby.</p>
-        <p>Create gatherings using curated suggestions based on location, day, and time.</p>
-        <h2>Contact Us</h2>
-        <p>If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us at info@letsechoapp.com.</p>
-        <DownloadSection />
-      </article>
-      <div className="clearfixed"></div>
     </main>
   )
 }

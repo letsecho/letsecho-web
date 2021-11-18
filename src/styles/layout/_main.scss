@@ -39,15 +39,20 @@
     }
 }
 
+.noTopMargin {
+  margin-top: 0px;
+}
+
 main {
 
+  margin-top: 32px;
   flex: 1 0 auto;
   position: relative;
 
   article {
     width: 60%;
     margin: 124px 0;
-    padding-right: 12%;
+    padding-right: 8%;
     box-sizing: border-box;
     vertical-align: top;
 

@@ -34,7 +34,7 @@ export const Main = () => {
             </div>
           </div>
         </header>
-        <main>
+        <main className="noTopMargin">
           <section className="hero text-center text-light">
             <div className="hero-bg"></div>
             <div className="hero-particles-container">
