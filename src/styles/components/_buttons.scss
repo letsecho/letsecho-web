@@ -171,6 +171,7 @@
 }
 
 .hostName {
+  color: #333131;
   text-align: left;
   margin-bottom: 28px;
   opacity: 1;
@@ -222,11 +223,19 @@
   float: left;
 }
 
+.nonMarginArticle p {
+  color: #464545;
+}
+
 .notFoundArticle {
   width: 100%;
   padding: 0%;
   margin: 0%;
   margin-bottom: 3%;
+}
+
+.stickyPlacer {
+  margin-top: 80px;
 }
 
 .bigArrow {
