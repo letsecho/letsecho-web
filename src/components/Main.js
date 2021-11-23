@@ -15,7 +15,7 @@ import IPhoneComments from "../images/iphone-comments.png";
 export const Main = () => {
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }, []);
 
   return (

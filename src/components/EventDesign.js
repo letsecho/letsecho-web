@@ -13,7 +13,7 @@ export const EventDesign = () => {
   const { data: baseinfo, loading } = useFetchEvent(eventId);
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }, []);
 
   return (
