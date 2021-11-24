@@ -11,8 +11,7 @@ import IPhoneDiscover from "../images/iphone-discover.png";
 import IPhoneEvent from "../images/iphone-event.png";
 import IPhoneComments from "../images/iphone-comments.png";
 
-import { SocialTags } from './static/SocialTags';
-import { Links } from './static/Links';
+import { InnerFooter } from './static/InnerFooter';
 
 export const Main = () => {
 
@@ -128,24 +127,7 @@ export const Main = () => {
     					</div>
     				</section>
     			</div>
-    			<div className="site-footer-bottom">
-    				<div className="container">
-    					<div className="site-footer-inner">
-    						<div className="brand footer-brand">
-                  <a href="/">
-    								<img src={Logo} alt="Letescho logo" width="40px"/>
-                  </a>
-    						</div>
-    						<ul className="footer-links list-reset">
-    							<Links />
-    						</ul>
-    						<ul className="footer-social-links list-reset">
-    							<SocialTags />
-    						</ul>
-    						<div className="footer-copyright">&copy; 2021 Letsecho, all rights reserved</div>
-    					</div>
-    				</div>
-    			</div>
+          <InnerFooter />
         </footer>
       </div>
       <Helmet><script src="main.min.js" type="text/javascript"/></Helmet>
