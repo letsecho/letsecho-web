@@ -7,7 +7,7 @@ import { DownloadSection } from './DownloadSection';
 export const Terms = () => {
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }, []);
 
   return (
