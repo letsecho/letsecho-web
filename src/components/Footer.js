@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Image from "../images/logo.svg";
 import { SocialTags } from './static/SocialTags';
+import { Links } from './static/Links';
 
 export const Footer = () => {
   return (
@@ -15,24 +15,7 @@ export const Footer = () => {
               </a>
             </div>
             <ul className="footer-links list-reset">
-              <li>
-                <a href="mailto:info@letsechoapp.com">Contact</a>
-              </li>
-              <li>
-                <Link className="navbar-brand" to="/faq">
-                  FAQ's
-                </Link>
-              </li>
-              <li>
-                <Link className="navbar-brand" to="/privacy">
-                  Privacy
-                </Link>
-              </li>
-              <li>
-                <Link className="navbar-brand" to="/terms">
-                  Terms
-                </Link>
-              </li>
+              <Links />
             </ul>
             <ul className="footer-social-links list-reset">
               <SocialTags color="#000"/>

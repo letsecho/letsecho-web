@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { Helmet } from "react-helmet";
-import { Link } from 'react-router-dom';
 
 import Logo from "../images/logo.svg";
 import IPhone from "../images/iphone-hero-bg.svg";
@@ -13,6 +12,7 @@ import IPhoneEvent from "../images/iphone-event.png";
 import IPhoneComments from "../images/iphone-comments.png";
 
 import { SocialTags } from './static/SocialTags';
+import { Links } from './static/Links';
 
 export const Main = () => {
 
@@ -137,24 +137,7 @@ export const Main = () => {
                   </a>
     						</div>
     						<ul className="footer-links list-reset">
-    							<li>
-    								<a href="mailto:info@letsechoapp.com">Contact</a>
-    							</li>
-                  <li>
-                    <Link className="navbar-brand" to="/faq">
-                      FAQ's
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="navbar-brand" to="/privacy">
-                      Privacy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="navbar-brand" to="/terms">
-                      Terms
-                    </Link>
-                  </li>
+    							<Links />
     						</ul>
     						<ul className="footer-social-links list-reset">
     							<SocialTags />
