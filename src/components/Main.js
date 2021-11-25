@@ -23,7 +23,7 @@ export const Main = () => {
     <>
       <div className="body-wrap boxed-container">
         <header className="site-header text-light">
-          <div className="container">
+          <div className="container metaContainer">
             <div className="site-header-inner">
               <div className="brand header-brand">
                 <h1 className="m-0">
