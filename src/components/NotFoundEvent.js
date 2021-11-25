@@ -9,9 +9,9 @@ export const NotFoundEvent = () => {
         <section className="float">
           <img src={NotFoundImage} alt="Letsecho Not Found" />
         </section>
-        <article className="nonMarginArticle">
-          <p className="hostName">Event id is not valid</p>
-          <h2 className="eventName">Event not found</h2>
+        <article className="centralArticle">
+          <h3 className="hostName">Event id is not valid</h3>
+          <h1 className="eventName">Event not found</h1>
           <p>
             The event is not available. Download the Letsecho app to find and create more gatherings.
           </p>
