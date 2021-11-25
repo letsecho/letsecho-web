@@ -23,7 +23,7 @@ export const Main = () => {
     <>
       <div className="body-wrap boxed-container">
         <header className="site-header text-light">
-          <div className="container">
+          <div className="container metaContainer">
             <div className="site-header-inner">
               <div className="brand header-brand">
                 <h1 className="m-0">
@@ -35,7 +35,7 @@ export const Main = () => {
             </div>
           </div>
         </header>
-        <main>
+        <main className="noTopMargin">
           <section className="hero text-center text-light">
             <div className="hero-bg"></div>
             <div className="hero-particles-container">

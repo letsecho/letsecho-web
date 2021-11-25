@@ -9,7 +9,7 @@ export const NotFoundEvent = () => {
         <section className="float">
           <img src={NotFoundImage} alt="Letsecho Not Found" />
         </section>
-        <article className="nonMarginArticle">
+        <article className="centralArticle">
           <h3 className="hostName">Event id is not valid</h3>
           <h1 className="eventName">Event not found</h1>
           <p>
