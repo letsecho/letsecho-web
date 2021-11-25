@@ -16,7 +16,7 @@ export const Faq = () => {
         <section className="float">
           <img src={NotFoundImage} alt="Letsecho" />
         </section>
-        <article className="nonMarginArticle">
+        <article className="centralArticle">
           <h3 className="hostName">Questions and answers</h3>
           <h1 className="eventName">FAQ</h1>
           <h2>What's Letsecho app?</h2>

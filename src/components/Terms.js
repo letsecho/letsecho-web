@@ -16,7 +16,7 @@ export const Terms = () => {
         <section className="float">
           <img src={NotFoundImage} alt="Letsecho" />
         </section>
-        <article className="nonMarginArticle">
+        <article className="centralArticle">
           <h1 className="eventName">Terms &amp; Conditions</h1>
           <p>
             By downloading or using the app, these terms will

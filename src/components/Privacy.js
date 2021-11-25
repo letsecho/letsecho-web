@@ -16,7 +16,7 @@ export const Privacy = () => {
         <section className="float">
           <img src={NotFoundImage} alt="Letsecho" />
         </section>
-        <article className="nonMarginArticle">
+        <article className="centralArticle">
           <h1 className="eventName">Privacy Policy</h1>
           <p>
             Letsecho built the Letsecho app as

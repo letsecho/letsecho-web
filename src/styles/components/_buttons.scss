@@ -216,14 +216,14 @@
   clear: both;
 }
 
-.nonMarginArticle {
+.centralArticle {
   word-wrap: break-word;
   margin: 0px;
   margin-bottom: 3%;
   float: left;
 }
 
-.nonMarginArticle p {
+.centralArticle p {
   color: #464545;
 }
 
@@ -261,7 +261,7 @@
     width: 45%;
     margin: 0% 1%;
   }
-  .nonMarginArticle {
+  .centralArticle {
     word-wrap: normal;
     margin-bottom: 1%;
   }
