@@ -12,6 +12,7 @@ jobs:
       - run: printf $"REACT_APP_API_KEY=${{ secrets.APP_ID }}\\nREACT_APP_REST_API_KEY=${{ secrets.REST_API_KEY }}" > .env && ls -a
       - run: npm install
       - run: npm run build
+      - run: npm run test
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
