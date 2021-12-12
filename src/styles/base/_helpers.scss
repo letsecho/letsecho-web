@@ -20,12 +20,15 @@
 }
 
 .container {
-
-    .container-sm {
+  .container-sm {
 		max-width: $container__width-sm;
-        padding-left: 0;
-        padding-right: 0;
-    }
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.metaContainer {
+	max-width: $container__width - 150 + ( get-content-padding(desktop) * 2 );
 }
 
 /* Text meant only for screen readers. */

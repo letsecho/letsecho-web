@@ -2,18 +2,17 @@ import React from 'react';
 import NotFoundImage from "../images/Square.svg";
 import { DownloadSection } from './DownloadSection';
 
-export const NotFoundEvent = () => {
+export const LoadingSection = () => {
   return (
     <>
       <section className="sectionDisplay">
         <section className="float">
-          <img src={NotFoundImage} alt="Letsecho Not Found" />
+          <img src={NotFoundImage} alt="Loading..." />
         </section>
         <article className="centralArticle">
-          <h3 className="hostName">Event id is not valid</h3>
-          <h1 className="eventName">Event not found</h1>
+          <h1 className="eventName">Loading</h1>
           <p>
-            The event is not available. Download the Letsecho app to find and create more gatherings.
+            The current event is loading. To join the event and participate in the conversation, please download the Letsecho app.
           </p>
           <DownloadSection />
         </article>
