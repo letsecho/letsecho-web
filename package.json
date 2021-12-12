@@ -1,5 +1,5 @@
 {
-  "name": "Letsecho",
+  "name": "letsecho",
   "description": "Letsecho's Cloud Functions for Firebase",
   "version": "1.1.0",
   "private": true,
@@ -11,6 +11,10 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -18,12 +22,10 @@
     "react-router-dom": "^5.2.0",
     "react-script-tag": "^1.1.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2",
-    "firebase-admin": "^9.8.0",
-    "firebase-functions": "^3.14.1"
+    "web-vitals": "^1.1.2"
   },
   "engines": {
-    "node": "14"
+    "node": "16"
   },
   "scripts": {
     "scss": "node-sass -o public/dist/css src/styles",
@@ -31,7 +33,7 @@
     "build": "npm run scss && react-scripts build && mv build/dist/css/*.css build/static/css && rm -r build/dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "firebase emulators:start --only functions",
+    "serve": "firebase emulators:start --only hosting,functions",
     "shell": "firebase functions:shell",
     "start-function": "npm run shell",
     "deploy": "firebase deploy --only functions",
