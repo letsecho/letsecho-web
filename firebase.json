@@ -24,13 +24,14 @@
       "**/.*",
       "src/*",
       "**/node_modules/**",
-      "functions/*"
+      "functions/*",
+      "public/index.html"
     ],
     "rewrites": [
       {
         "source": "**",
         "function": "app"
-      }
+      } 
     ]
   }
 }
