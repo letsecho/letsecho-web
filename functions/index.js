@@ -2,16 +2,13 @@ const functions = require('firebase-functions');
 const express = require('express');
 const cors = require('cors')({origin: true});
 const fs = require('fs');
-// const ReactDOMServer = require('ReactDOMServer');
-
 const path = require('path');
+const config = functions.config();
+const service = config.letsechoservice;
 
 const app = express();
 
 const fetch = require("node-fetch");
-
-const config = functions.config();
-// const {rest, api} = config.slack;
 
 app.get('/**', (req, res) => {
 
@@ -64,8 +61,8 @@ const getEvent = async(pathName) => {
   const resp = await fetch(url, {
     method: 'GET',
     headers: {
-      "X-Parse-Application-Id": api,
-      "X-Parse-REST-API-Key": rest
+      "X-Parse-Application-Id": service.api,
+      "X-Parse-REST-API-Key": service.rest
     }
   });
   let eventResponse = await resp.json();
