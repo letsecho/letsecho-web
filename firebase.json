@@ -10,44 +10,24 @@
             "value": "application/json"
           }
         ]
-      },
-      {
-        "source": "/.well-known/assetlinks.json",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ]
-      },
-      {
-        "source": "/well-known/assetlinks.json",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ]
       }
     ],
     "appAssociation": "NONE",
     "ignore": [
       "firebase.json",
+      "**/.*",
       "**/node_modules/**",
       "src/*"
     ],
     "rewrites": [
       {
+        "source": "/.well-known/assetlinks.json",
+        "destination": "/.well-known/assetlinks.json"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
-      }
-    ],
-    "redirects": [
-      {
-        "source": "/.well-known/assetlinks.json",
-        "destination": "/well-known/assetlinks.json",
-        "type": 302
-      }
+      }   
     ]
   }
 }
