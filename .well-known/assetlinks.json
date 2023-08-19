@@ -1,14 +1,14 @@
 [
-    {
-      "relation": [
-        "delegate_permission/common.handle_all_urls"
-      ],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "com.letsecho.letsechoapp",
-        "sha256_cert_fingerprints": [
-          "DF:94:3C:7F:7F:EC:D9:E3:B1:E4:55:69:6A:20:D2:35:50:50:6D:1B:3B:73:89:60:AC:BC:83:88:F7:4A:4E:94"
-        ]
-      }
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.letsecho.letsechoapp",
+      "sha256_cert_fingerprints": [
+        "8E:09:8D:F2:A4:77:E5:F9:8D:4D:D4:FE:67:32:17:41:4C:56:F5:B9:9E:83:79:4E:B5:37:4B:76:25:DB:36:AA"
+      ]
     }
+  }
 ]
