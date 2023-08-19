@@ -12,7 +12,7 @@
         ]
       },
       {
-        "source": "/.well-known/assetlinks.json",
+        "source": "assetlinks.json",
         "headers": [
           {
             "key": "Content-Type",
@@ -35,7 +35,7 @@
       },
       {
         "source": "/.well-known/assetlinks.json",
-        "destination": "/.well-known/assetlinks.json"
+        "destination": "assetlinks.json"
       }    
     ]
   }
