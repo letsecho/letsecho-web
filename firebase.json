@@ -10,6 +10,15 @@
             "value": "application/json"
           }
         ]
+      },
+      {
+        "source": "assetlinks.json",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ]
       }
     ],
     "appAssociation": "NONE",
@@ -21,13 +30,13 @@
     ],
     "rewrites": [
       {
-        "source": "/.well-known/assetlinks.json",
-        "destination": "assetlinks.json"
-      },
-      {
         "source": "**",
         "destination": "/index.html"
-      }   
+      },
+      {
+        "source": "/.well-known/assetlinks.json",
+        "destination": "assetlinks.json"
+      }
     ]
   }
 }
