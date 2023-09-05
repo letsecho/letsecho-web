@@ -1,10 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { hydrate, render } from "react-dom";
 
 import { LetsechoApp } from './LetsechoApp';
 import './styles/style.scss';
 
-ReactDOM.render(
-  <LetsechoApp />,
-  document.getElementById('root')
-);
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+  hydrate(<LetsechoApp />, rootElement);
+} else {
+  render(<LetsechoApp />, rootElement);
+}

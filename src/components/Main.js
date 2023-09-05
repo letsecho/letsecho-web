@@ -28,7 +28,7 @@ export const Main = () => {
               <div className="brand header-brand">
                 <h1 className="m-0">
                   <a href="/">
-                    <img className="header-logo-image" src={Logo} alt="Logo" width="50px"/>
+                    <img className="header-logo-image" src={Logo} alt="Logo" width="50px" />
                   </a>
                 </h1>
               </div>
@@ -53,9 +53,9 @@ export const Main = () => {
                 </div>
                 <div className="mockup-container">
                   <div className="mockup-bg">
-                    <img src={IPhone} alt="iPhone illustration"/>
+                    <img src={IPhone} alt="iPhone illustration" />
                   </div>
-                  <img className="device-mockup" src={IPhoneEvent} alt="iPhone Hero"/>
+                  <img className="device-mockup" src={IPhoneEvent} alt="iPhone Hero" />
                 </div>
               </div>
             </div>
@@ -67,9 +67,9 @@ export const Main = () => {
                   <div className="feature-extended">
                     <div className="feature-extended-image">
                       <div className="mockup-bg">
-                        <img src={IPhoneFeature} alt="iPhone Feature 01 illustration"/>
+                        <img src={IPhoneFeature} alt="iPhone Feature 01 illustration" />
                       </div>
-                      <img className="device-mockup is-revealing" src={IPhoneDiscover} alt="iPhone Discover"/>
+                      <img className="device-mockup is-revealing" src={IPhoneDiscover} alt="iPhone Discover" />
                     </div>
                     <div className="feature-extended-body is-revealing">
                       <h3 className="mt-0 mb-16">Discover</h3>
@@ -80,9 +80,9 @@ export const Main = () => {
                   <div className="feature-extended">
                     <div className="feature-extended-image">
                       <div className="mockup-bg">
-                        <img src={IPhoneFeature2} alt="iPhone Feature 02 illustration"/>
+                        <img src={IPhoneFeature2} alt="iPhone Feature 02 illustration" />
                       </div>
-                      <img className="device-mockup is-revealing" src={IPhoneSuggestions} alt="iPhone Suggestions"/>
+                      <img className="device-mockup is-revealing" src={IPhoneSuggestions} alt="iPhone Suggestions" />
                     </div>
                     <div className="feature-extended-body is-revealing">
                       <h3 className="mt-0 mb-16">Suggestion</h3>
@@ -93,9 +93,9 @@ export const Main = () => {
                   <div className="feature-extended">
                     <div className="feature-extended-image">
                       <div className="mockup-bg">
-                        <img src={IPhoneFeature} alt="iPhone Feature 01 illustration"/>
+                        <img src={IPhoneFeature} alt="iPhone Feature 01 illustration" />
                       </div>
-                      <img className="device-mockup is-revealing" src={IPhoneComments} alt="iPhone Comments"/>
+                      <img className="device-mockup is-revealing" src={IPhoneComments} alt="iPhone Comments" />
                     </div>
                     <div className="feature-extended-body is-revealing">
                       <h3 className="mt-0 mb-16">Comments</h3>
@@ -109,28 +109,30 @@ export const Main = () => {
           </section>
         </main>
         <footer className="site-footer">
-    			<div className="footer-particles-container">
-    				<canvas id="footer-particles"></canvas>
-    			</div>
-    			<div className="site-footer-top">
-    				<section className="cta section text-light">
-    					<div className="container-sm">
-    						<div className="cta-inner section-inner">
-    							<div className="cta-header text-center">
-    								<h2 className="section-title mt-0">Join the wave</h2>
-    								<p className="section-paragraph">Subscribe to get Letsecho’s updates to your email address.</p>
-    								<div className="cta-cta">
-    									<a className="button button-primary button-wide-mobile" href="http://eepurl.com/hBi_1v">Subscribe</a>
-    								</div>
-    							</div>
-    						</div>
-    					</div>
-    				</section>
-    			</div>
+          <div className="footer-particles-container">
+            <canvas id="footer-particles"></canvas>
+          </div>
+          <div className="site-footer-top">
+            <section className="cta section text-light">
+              <div className="container-sm">
+                <div className="cta-inner section-inner">
+                  <div className="cta-header text-center">
+                    <h2 className="section-title mt-0">Join the wave</h2>
+                    <p className="section-paragraph">Subscribe to get Letsecho’s updates to your email address.</p>
+                    <div className="cta-cta">
+                      <a className="button button-primary button-wide-mobile" href="http://eepurl.com/hBi_1v">Subscribe</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
           <InnerFooter />
         </footer>
       </div>
-      <Helmet><script src="main.min.js" type="text/javascript"/></Helmet>
+      <Helmet>
+        <script src="main.min.js" type="text/javascript" />
+      </Helmet>
     </>
   )
 }
