@@ -131,9 +131,6 @@ export const Main = () => {
         </footer>
       </div>
       <Helmet>
-        <meta property="og:url" content="https://letsechoapp.com/" />
-        <meta property="og:title" content="Letsecho" />
-        <meta property="og:description" content="Discover spontaneous activities, meet people, and make meaningful connections." />
         <script src="main.min.js" type="text/javascript" />
       </Helmet>
     </>
