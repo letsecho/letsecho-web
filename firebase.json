@@ -1,42 +1,42 @@
 {
-  "hosting": {
-    "public": "build",
-    "headers": [
-      {
-        "source": "apple-app-site-association",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ]
-      },
-      {
-        "source": "assetlinks.json",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ]
-      }
-    ],
-    "appAssociation": "NONE",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**",
-      "src/*"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/.well-known/assetlinks.json",
-        "destination": "assetlinks.json"
-      }
-    ]
-  }
+	"hosting": {
+		"public": "build",
+		"headers": [{
+				"source": "apple-app-site-association",
+				"headers": [{
+					"key": "Content-Type",
+					"value": "application/json"
+				}]
+			},
+			{
+				"source": ".well-known/assetlinks.json",
+				"headers": [{
+					"key": "Content-Type",
+					"value": "application/json"
+				}]
+			},
+			{
+				"source": "assetlinks.json",
+				"headers": [{
+					"key": "Content-Type",
+					"value": "application/json"
+				}]
+			}
+		],
+		"appAssociation": "AUTO",
+		"ignore": [
+			"firebase.json",
+			"**/node_modules/**",
+			"src/*"
+		],
+		"rewrites": [{
+				"source": "**",
+				"destination": "/index.html"
+			},
+			{
+				"source": ".well-known/assetlinks.json",
+				"destination": "assetlinks.json"
+			}
+		]
+	}
 }
