@@ -30,6 +30,7 @@ export async function generateMetadata(
       description: 'Upcoming events',
       images: [baseinfo.banner?.url],
       url: `/events/${eventId}`,
+      type: 'website'
     }
   }
   

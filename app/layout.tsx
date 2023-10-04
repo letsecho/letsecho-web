@@ -4,6 +4,10 @@ export const metadata = {
   title: 'Letsecho',
   description: 'Discover spontaneous activities, meet people, and make meaningful connections.',
   metadataBase: new URL('https://letsechoapp.com'),
+  openGraph: {
+    site_name: 'Letsecho',
+    type: 'website'
+  }
 }
 
 export default function RootLayout({
