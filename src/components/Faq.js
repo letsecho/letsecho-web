@@ -1,20 +1,14 @@
 import React from 'react';
-import { useEffect } from 'react';
-
+import Image from 'next/image'
 import NotFoundImage from "../images/Square.svg";
 import { DownloadSection } from './DownloadSection';
 
 export const Faq = () => {
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <main>
       <section className="sectionDisplay">
         <section className="float">
-          <img src={NotFoundImage} alt="Letsecho" />
+          <Image src={NotFoundImage} alt="Letsecho" />
         </section>
         <article className="centralArticle">
           <h3 className="hostName">Questions and answers</h3>

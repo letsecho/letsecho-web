@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 import NotFoundImage from "../images/Square.svg";
 import { DownloadSection } from './DownloadSection';
 
@@ -7,7 +8,7 @@ export const NotFoundEvent = () => {
     <>
       <section className="sectionDisplay">
         <section className="float">
-          <img src={NotFoundImage} alt="Letsecho Not Found" />
+          <Image src={NotFoundImage} alt="Letsecho Not Found" />
         </section>
         <article className="centralArticle">
           <h3 className="hostName">Event id is not valid</h3>
