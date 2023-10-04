@@ -13,10 +13,12 @@ export async function generateMetadata(
     return {
       title,
       description,
+      url: `/events/${eventId}`,
       openGraph: {
         title,
         description,
         images: [baseinfo.banner?.url],
+        url: `/events/${eventId}`,
       }
     }
   }
@@ -24,10 +26,12 @@ export async function generateMetadata(
   return {
     title: 'Events - Letsecho',
     description: 'Upcoming events',
+    url: `/events/${eventId}`,
     openGraph: {
       title: 'Events - Letsecho',
       description: 'Upcoming events',
       images: [baseinfo.banner?.url],
+      url: `/events/${eventId}`,
     }
   }
   
