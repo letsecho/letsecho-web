@@ -13,7 +13,6 @@ export async function generateMetadata(
     return {
       title,
       description,
-      url: `/events/${eventId}`,
       openGraph: {
         title,
         description,
@@ -26,7 +25,6 @@ export async function generateMetadata(
   return {
     title: 'Events - Letsecho',
     description: 'Upcoming events',
-    url: `/events/${eventId}`,
     openGraph: {
       title: 'Events - Letsecho',
       description: 'Upcoming events',
