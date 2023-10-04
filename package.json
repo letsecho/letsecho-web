@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "^13.5.4",
     "sass": "^1.68.0"
   }
 }
