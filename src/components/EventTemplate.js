@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 import NotFoundImage from "../images/Square.svg";
 import { DownloadSection } from './DownloadSection';
 
@@ -7,7 +8,12 @@ export const EventTemplate = ({eventName = "", hostName = "", eventDescription =
     <>
       <section className="sectionDisplay">
         <section className="float">
-          <img src={(imageUrl) ? imageUrl: NotFoundImage} alt={imageName} />
+          <Image 
+            src={(imageUrl) ? imageUrl: NotFoundImage} 
+            alt={imageName}
+            width={200}
+            height={200}
+          />
         </section>
         <article className="centralArticle">
           <h3 className="hostName">Hosted by: {hostName}</h3>

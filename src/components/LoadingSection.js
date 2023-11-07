@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 import NotFoundImage from "../images/Square.svg";
 import { DownloadSection } from './DownloadSection';
 
@@ -7,7 +8,7 @@ export const LoadingSection = () => {
     <>
       <section className="sectionDisplay">
         <section className="float">
-          <img src={NotFoundImage} alt="Loading..." />
+          <Image src={NotFoundImage} alt="Loading..." />
         </section>
         <article className="centralArticle">
           <h1 className="eventName">Loading</h1>

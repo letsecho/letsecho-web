@@ -7,20 +7,22 @@
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "axios": "^0.21.1",
+    "next": "^13.5.2",
     "node-sass": "^6.0.1",
-    "react": "^18.0.2",
-    "react-dom": "^18.0.2",
-    "react-helmet": "^6.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
     "scss": "node-sass -o public/dist/css src/styles",
-    "start": "react-scripts start",
-    "build": "npm run scss && react-scripts build && mv build/dist/css/*.css build/static/css && rm -r build/dist",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +41,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^13.5.4",
+    "sass": "^1.68.0"
   }
 }

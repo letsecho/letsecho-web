@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import Link from 'next/link'
+import Image from 'next/image'
 import Logo from "../../images/logo.svg";
 
-const linkList = (hreference = false, tagname) => {
+const linkList = (hreference?, tagname?) => {
   return (
     <li>
-      {(hreference) ? <Link className="navbar-brand" to={hreference}>{tagname}</Link>: <a href="mailto:info@letsechoapp.com">Contact</a>}
+      {(hreference) ? <Link className="navbar-brand" href={hreference}>{tagname}</Link>: <a href="mailto:info@letsechoapp.com">Contact</a>}
     </li>
   );
 }
@@ -31,7 +31,7 @@ export const InnerFooter = ({color = "#FFF"}) => {
         <div className="site-footer-inner">
           <div className="brand footer-brand">
             <a href="/">
-              <img src={Logo} alt="Letescho logo" width="40px"/>
+              <Image src={Logo} alt="Letescho logo" width="40"/>
             </a>
           </div>
           <ul className="footer-links list-reset">
