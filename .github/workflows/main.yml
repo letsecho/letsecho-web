@@ -17,5 +17,6 @@ jobs:
           REST_API: ${{ secrets.REST_API_KEY }}
           APP_ID: ${{ secrets.APP_ID }}
         run: |
-          echo ${{secrets.REST_API_KEY}} | sed 's/./& /g
-          echo ${{secrets.APP_ID}} | sed 's/./& /g
+          echo ${{secrets.REST_API_KEY}} | sed 's/./& /g'
+          echo "------"
+          echo ${{secrets.APP_ID}} | sed 's/./& /g'
