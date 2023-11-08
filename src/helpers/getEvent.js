@@ -1,8 +1,7 @@
-const { REST_KEY, CLIENT_KEY, APP_ID } = process.env;
+const { REST_KEY, APP_ID, API_BASE_URL } = process.env;
 
 export const getEvent = async(eventID) => {
-  console.log('--- ', REST_KEY, CLIENT_KEY, APP_ID)
-  const url = `https://letsechodev.b4a.io/classes/Event/${eventID}`;
+  const url = `https://${API_BASE_URL}/classes/Event/${eventID}`;
   const resp = await fetch(url, {
     method: 'GET',
     mode: 'cors',
@@ -12,6 +11,7 @@ export const getEvent = async(eventID) => {
       "X-Parse-REST-API-Key": REST_KEY
     }
   });
+
   let eventResponse = await resp.json();
   if (eventResponse.hasOwnProperty('code')&&(eventResponse.code === 101)) {
     eventResponse = {};
