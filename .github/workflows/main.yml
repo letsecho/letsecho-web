@@ -12,7 +12,7 @@ jobs:
     env:
       Greeting: Hello
     steps:
-      - shell: bash
+      - name: "Say Hello Mona it's Monday"
         env:
           REST_API: ${{ secrets.REST_API_KEY }}
           APP_ID: ${{ secrets.APP_ID }}
