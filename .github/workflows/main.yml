@@ -1,0 +1,20 @@
+name: Greeting on variable day
+
+on:
+  workflow_dispatch
+
+env:
+  DAY_OF_WEEK: Monday
+
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    env:
+      Greeting: Hello
+    steps:
+      - shell: bash
+        env:
+          REST_API: ${{ secrets.REST_API_KEY }}
+          APP_ID: ${{ secrets.APP_ID }}
+        run: |
+          echo "$REST_API - $APP_ID"
